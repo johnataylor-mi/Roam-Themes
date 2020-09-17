@@ -1,0 +1,228 @@
+/* ============================================================== */
+/* Fall Cafe Roam Theme by John A. Taylor, September 17, 2020    */
+/* ============================================================ */
+
+@import url('https://neue-roam-theme.glitch.me/title.css');
+@import url('https://neue-roam-theme.glitch.me/body.css');
+
+:root {
+	--header-font: 'Title';
+    --body-font: 'Body';
+    --blockquote-font-color: #6C8493;
+    --blockquote-border-color: #444;
+    --blockquote-bg: none;
+    --blockquote-cite: #222020;
+}
+/* Fonts */
+body,
+div,
+textarea,
+.level2 {
+    font-family: var(--body-font) !important;
+}
+/* Left Sidebar */
+
+/* No "SHORTCUTS" Heading */
+.starred-pages-wrapper .flex-h-box {
+display: none;
+}
+/* Change sideboard to all one color */
+.roam-body .roam-app .roam-sidebar-container {
+    background-color: #424131 !important;
+}
+/* Left side Bar Open/Close Icon color and make star icon into coffee cup */
+.bp3-icon-star-empty::before {
+    content: "☕";
+}
+.bp3-icon-graph:before,
+.bp3-icon-star:before,
+.bp3-icon-star-empty:before,
+.bp3-icon-more:before,
+.bp3-icon-menu:before,
+.bp3-button:before,
+.bp3-minimal:before,
+.bp3-small:before,
+.bp3-icon-filter {
+    color: green !important;
+}
+/* Left side Bar Hovering */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+    color: black;
+    background-color: #938F6C;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
+    color: black;
+    background-color: #938F6C;
+}
+.roam-sidebar-container.noselect:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.3;
+  filter: blur(4px);
+}
+/* Search Bar */
+.rm-find-or-create-wrapper {
+  flex: 0 1 100% !important;
+}
+.bp3-input::placeholder,
+.bp3-input-group > .bp3-icon {
+    color: #56b38c;
+}
+/* Roam Search Box Placeholder Text Color */
+.bp3-input::placeholder,
+.bp3-input-group > .bp3-icon {
+    color: #56b38c;
+}
+/* Input Text Color in Search Bar */
+.bp3-input {
+    color: black;
+}/* hover color in search bar*/
+.rm-mentions-search-items .rm-mentions-search-item:hover {
+    background-color: red;
+}
+/* wrap overflow text in dropdown menu */
+.bp3-text-overflow-ellipsis {
+    text-overflow: unset;
+    white-space: unset;
+}
+/* New Page Button Color                               */
+.rm-find-or-create-wrapper .rm-menu-item .rm-search-title .rm-new-page {
+    color: #56b38c;
+}
+.bp3-button .bp3-minimal .bp3-intent-success {
+    color: #56b38c
+}
+.bp3-button .bp3-minimal .bp3-intent-success a:hover {
+    background-color: #938F6C;
+}
+/* Body */
+body {
+/* Background color */
+    background-color: #AFAC92;
+}
+/* Header bar */
+.roam-topbar {
+    background-color: #938F6C
+}
+/* Tagging style */
+
+        m-page-ref-tag {
+    /* hashtags */
+    color: #ebffff !important;
+    background-color: #56b38c;
+    border-radius: 10px;
+    padding: 2px 3px 2px 3px;
+}
+/* external link color */
+a.rm-alias.rm-alias-external {
+    color: red !important;
+}
+/* Header Styles */
+.roam-app h1 {
+    /* styles page titling */
+    color: #6C8493 !important;
+    font-weight: bold;
+    font-size: 32px;
+}
+.roam-app h2 {
+    /* styles page titling */
+    color: #6C8493 !important;
+    font-weight: bold;
+    font-size: 24px;
+}
+.roam-app h3 {
+    /* styles page titling */
+    color: #6C8493 !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+.roam-app h4 {
+    /* styles page titling */
+    color: #6C8493 !important;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Reference Titles */
+.roam-article > div:last-child a {
+    color: #6C8493 !important;
+}
+/* Reference Boxes */
+.rm-reference-item {
+    background-color: #b6c2c9;
+    border-radius: 15px;
+    padding: 20px;
+}
+/* Wraps text in inline search with [[]] or (()) */
+.bp3-text-overflow-ellipsis {
+    text-overflow: unset;
+    white-space: unset;
+}
+/* Bullets, Links & Hashtags */
+.controls .simple-bullet-outer .simple-bullet-inner {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #56b38c;
+}
+.roam-bullet-closed {
+    background-color: #FFEB3B;
+}
+/* Markdown link titles */
+.roam-app a {
+    color: green;
+}
+.roam-app a:focus,
+.roam-app a:hover {
+    color: #56b38c;
+    text-decoration: underline;
+}
+/* external link color */
+a.rm-alias.rm-alias-external {
+    color: red !important;
+}
+/* the currently selected block */
+.rm-block-input {
+    color: #234a3a !important;
+    font-family: 'Work Sans', serif;
+    background-color: #938F6C;
+}
+/* hashtag colors, add your own words in 'data-tag' to change colors */
+span.rm-page-ref[data-tag="📥Inbox"] {
+    background: cornflowerblue;
+    color: #fff;
+}
+span.rm-page-ref[data-tag="p1"] {
+    background: red;
+    color: #fff;
+}
+span.rm-page-ref[data-tag="p2"] {
+    background: orange;
+    color: #fff;
+}
+span.rm-page-ref[data-tag="p3"] {
+    background: blue;
+    color: #fff;
+}
+/* Right Side Bar */
+
+/* Change Sidebar Width */
+.roam-center {
+  flex-basis: 50% !important;
+}
+/* Right side bar color */
+#right-sidebar {
+    background-color: #C2ACBA !Important;
+}
+/* Right side bar reference boxes */
+#right-sidebar .rm-reference-item {
+    background-color: #4E6B59;
+    border-radius: 20px;
+    padding: 20px;
+}
