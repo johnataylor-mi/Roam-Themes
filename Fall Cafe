@@ -1,6 +1,6 @@
-/* ============================================================== */
-/* Fall Cafe Roam Theme by John A. Taylor, September 17, 2020    */
-/* ============================================================ */
+/* ================================================================== */
+/* Fall Cafe Roam Theme by John A. Taylor, September 18, 2020 rvsd   */
+/* ================================================================ */
 
 @import url('https://neue-roam-theme.glitch.me/title.css');
 @import url('https://neue-roam-theme.glitch.me/body.css');
@@ -19,6 +19,13 @@ div,
 textarea,
 .level2 {
     font-family: var(--body-font) !important;
+}
+/* Primary Tagging Style */
+.rm-page-ref-tag { /* hashtags */
+    color: white !important;
+    background-color: green;
+    border-radius: 10px;
+    padding: 2px 3px 2px 3px;
 }
 /* Left Sidebar */
 
@@ -64,8 +71,9 @@ display: none;
   top: 0;
   bottom: 0;
   z-index: -1;
-  opacity: 0.3;
-  filter: blur(4px);
+/* Useful Options */
+/*  opacity: 0.0; */
+/*  filter: blur(0px); */
 }
 /* Search Bar */
 .rm-find-or-create-wrapper {
@@ -114,9 +122,9 @@ body {
 /* Tagging style */
 
         m-page-ref-tag {
-    /* hashtags */
+/* hashtags */
     color: #ebffff !important;
-    background-color: #56b38c;
+    background-color: teal !important;
     border-radius: 10px;
     padding: 2px 3px 2px 3px;
 }
@@ -178,14 +186,10 @@ a.rm-alias.rm-alias-external {
 .roam-app a {
     color: green;
 }
-.roam-app a:focus,
+.roam-app a:focus
 .roam-app a:hover {
     color: #56b38c;
     text-decoration: underline;
-}
-/* external link color */
-a.rm-alias.rm-alias-external {
-    color: red !important;
 }
 /* the currently selected block */
 .rm-block-input {
