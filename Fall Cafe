@@ -1,6 +1,6 @@
-/* ================================================================== */
-/* Fall Cafe Roam Theme by John A. Taylor, September 18, 2020 rvsd   */
-/* ================================================================ */
+/* ============================================================== */
+/* Fall Cafe Roam Theme by John A. Taylor, September 17, 2020    */
+/* ============================================================ */
 
 @import url('https://neue-roam-theme.glitch.me/title.css');
 @import url('https://neue-roam-theme.glitch.me/body.css');
@@ -130,7 +130,7 @@ body {
 }
 /* external link color */
 a.rm-alias.rm-alias-external {
-    color: red !important;
+    color: blue !important;
 }
 /* Header Styles */
 .roam-app h1 {
@@ -214,7 +214,27 @@ span.rm-page-ref[data-tag="p3"] {
     background: blue;
     color: #fff;
 }
-/* Right Side Bar */
+span.rm-page-ref[data-tag="Tweet"] {
+    background: rgb(39,39,157);
+    color: #fff;
+}
+span.rm-page-ref[data-tag="Quote"] {
+    background: #ed8376;
+    color: #fff;
+}
+span.rm-page-ref[data-tag="🌰Acorn"] {
+    background: gray;
+    color: #fff;
+}
+span.rm-page-ref[data-tag="🌳Shade Tree"] {
+    background: rgb(215,143,12);
+    color: #fff;
+}
+span.rm-page-ref[data-tag="🍂Falling Leaf"] {
+    background: #424131;
+    color: #fff;
+}
+/* Right Side Bar  */
 
 /* Change Sidebar Width */
 .roam-center {
@@ -222,11 +242,11 @@ span.rm-page-ref[data-tag="p3"] {
 }
 /* Right side bar color */
 #right-sidebar {
-    background-color: #C2ACBA !Important;
+    background-color: #CFD0D8 !Important; /* #C2ACBA */
 }
 /* Right side bar reference boxes */
 #right-sidebar .rm-reference-item {
-    background-color: #4E6B59;
+    background-color: #4E6B594FB2;
     border-radius: 20px;
     padding: 20px;
 }
